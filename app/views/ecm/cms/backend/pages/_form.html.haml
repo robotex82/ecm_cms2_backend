@@ -1,7 +1,7 @@
 .well
   = form.input :title
   = form.input :meta_description
-  = form.input :body
+  = form.input :body, input_html: { 'data-add-editor': 'true' }
 
 .well
   = form.input :pathname

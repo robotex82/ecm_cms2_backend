@@ -19,14 +19,18 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "> 4.0"
 
+  s.add_dependency 'ace-rails-ap'
   s.add_dependency "ecm_cms2"
   s.add_dependency "itsf_backend"
   s.add_dependency 'rails-i18n'
   s.add_dependency 'route_translator'
+  s.add_dependency 'coffee-rails'
+  s.add_dependency 'jquery-rails'
 
   s.add_development_dependency 'rails-dummy'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'i18n-debug'
+  s.add_development_dependency 'jquery-turbolinks'
 
   s.add_development_dependency 'guard-bundler'
   s.add_development_dependency 'guard-rails'

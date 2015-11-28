@@ -10,6 +10,7 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 require 'i18n/debug'
+require 'jquery-turbolinks'
 require 'rails-i18n'
 require 'route_translator'
 require "ecm_cms2_backend"
