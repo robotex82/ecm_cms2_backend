@@ -27,4 +27,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rails-dummy'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'i18n-debug'
+
+  s.add_development_dependency 'guard-bundler'
+  s.add_development_dependency 'guard-rails'
 end
