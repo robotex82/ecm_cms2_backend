@@ -6,7 +6,7 @@ $ ->
     div_id = "editor_for_#{$(textarea).attr('id')}"
 
     # Add editor div
-    $(textarea).after("<div id=\"#{div_id}\" class=\"editor\"></div>")
+    $(textarea).after("<div id=\"#{div_id}\" class=\"editor\">#{$(textarea).val()}</div>")
 
     # Hide textarea
     $(textarea).css('display', 'none');
