@@ -6,6 +6,6 @@ Itsf::Backend.configure do |config|
   config.base_controller = '::ApplicationController'
 
   config.backend_engines = [
-    Ecm::Cms::Backend
+    Ecm::Cms::Backend::Engine
   ]
 end
