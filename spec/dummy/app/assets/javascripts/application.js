@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require ecm_cms_backend
+//= require twitter/bootstrap
 //= require bootstrap
+//= require ecm_cms_backend
 

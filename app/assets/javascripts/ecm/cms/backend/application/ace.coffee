@@ -14,6 +14,11 @@ $ ->
     # Add editor
     editor = ace.edit("#{div_id}")
 
+    # Set syntax highlighting
+    if $(textarea).is('[data-editor-syntax]')
+      syntax = $(textarea).attr('data-editor-syntax')
+      editor.session.setMode("ace/mode/#{syntax}");
+
     # On change, copy content to the textarea
     editor.on('input', ->
       $(textarea).val(editor.getValue())

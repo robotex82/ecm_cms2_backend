@@ -1,7 +1,7 @@
 .well
   = form.input :title
   = form.input :meta_description
-  = form.input :body, input_html: { 'data-add-editor': 'true' }
+  = form.input :body, input_html: { 'data-add-editor': true, 'data-editor-syntax': form.object.handler }
 
 .well
   = form.input :pathname
@@ -12,3 +12,7 @@
 
 .well
   = form.input :layout
+
+.well
+  - Ecm::Cms::Navigation.where(locale: I18n.locale).all.each do |navigation|
+    = form.association :ecm_cms_navigation_items, as: :check_boxes, collection: navigation.ecm_cms_navigation_items.joins(:ecm_cms_navigation).where(ecm_cms_navigations: { locale: locale }), label_method: :key

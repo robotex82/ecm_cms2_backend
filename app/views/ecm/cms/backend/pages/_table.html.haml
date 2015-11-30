@@ -1,9 +1,9 @@
 = table.column :id
-= table.column :title
 = table.column :pathname
-= table.column :basename
-= table.column :locale
-= table.column :format
-= table.column :handler
+= table.column :filename
+= table.column :title
+= table.column :home_page?
+= table.column :layout
+= table.column(:ecm_cms_navigation_items) { |page| page.ecm_cms_navigation_items.collect{ |navigation_item| link_to(navigation_item, navigation_item_path(navigation_item)) }.join }
 = table.column :created_at
 = table.column :updated_at

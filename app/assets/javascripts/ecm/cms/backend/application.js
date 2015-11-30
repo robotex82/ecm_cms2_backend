@@ -11,5 +11,6 @@
 // about supported directives.
 //
 //= require ace-rails-ap
+//= require itsf_backend
 //= require_tree ./application
 
