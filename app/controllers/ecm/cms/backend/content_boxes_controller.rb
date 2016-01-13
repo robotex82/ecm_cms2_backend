@@ -1,7 +1,11 @@
 class Ecm::Cms::Backend::ContentBoxesController < Itsf::Backend::BaseController
+  def self.resource_class
+    Ecm::Cms::ContentBox
+  end
+
   private
 
-  def resource_class
-    "Ecm::Cms::ContentBox".constantize
+  def permitted_params
+    params.require(:ecm_cms_content_box).permit(:name)
   end
 end

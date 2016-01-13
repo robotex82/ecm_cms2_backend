@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     ecm_cms2_backend (0.0.1)
-      ace-rails-ap
       coffee-rails
       ecm_cms2
       itsf_backend
@@ -16,7 +15,6 @@ PATH
   specs:
     ecm_cms2 (1.1.1)
       RedCloth
-      active_admin-awesome_nested_set
       awesome_nested_set
       draper
       rails (>= 4.0, < 5.0)
@@ -27,6 +25,7 @@ PATH
   remote: ~/rails/itsf/itsf_backend
   specs:
     itsf_backend (0.0.1)
+      ace-rails-ap
       admino
       bootstrap-kaminari-views
       haml-rails
@@ -61,8 +60,6 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    active_admin-awesome_nested_set (0.0.8)
-      rails (>= 3.2.5, < 5.0)
     activejob (4.2.5)
       activesupport (= 4.2.5)
       globalid (>= 0.3.0)

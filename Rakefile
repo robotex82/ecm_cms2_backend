@@ -17,8 +17,4 @@ end
 
 Bundler::GemHelper.install_tasks
 
-
-
-task default: :test
-
 require 'rails/dummy/tasks'

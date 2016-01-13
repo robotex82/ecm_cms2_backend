@@ -9,17 +9,16 @@ Gem::Specification.new do |s|
   s.version     = Ecm::Cms::Backend::VERSION
   s.authors     = ["Roberto Vasquez Angel"]
   s.email       = ["roberto@vasquez-angel.de"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Ecm::Cms2::Backend."
-  s.description = "TODO: Description of Ecm::Cms2::Backend."
+  s.homepage    = "https://github.com/robotex82/ecm_cms2_backend"
+  s.summary     = "Backend Module for ECM CMS 2"
+  s.description = "Provides a ITSF Backend based Backend for ECM CMS 2"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "> 4.0"
 
-  s.add_dependency 'ace-rails-ap'
   s.add_dependency "ecm_cms2"
   s.add_dependency "itsf_backend"
   s.add_dependency 'rails-i18n'

@@ -1,7 +1,12 @@
 class Ecm::Cms::Backend::PartialsController < Itsf::Backend::BaseController
+  def self.resource_class
+    Ecm::Cms::Partial
+  end
+
   private
 
-  def resource_class
-    "Ecm::Cms::Partial".constantize
+  def permitted_params
+    params.require(:ecm_cms_partial)
+          .permit(:body, :pathname, :basename, :locale, :format, :handler)
   end
 end

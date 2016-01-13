@@ -1,2 +1,6 @@
 de:
-  ecm_cms_backend: 'CMS'
+  classes:
+    ecm/cms/backend/engine: 'CMS'
+  routes:
+    mount:
+      ecm_cms_backend: '/backend/content-management-system'

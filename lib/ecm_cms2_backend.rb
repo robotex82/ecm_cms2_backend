@@ -1,4 +1,3 @@
-require 'ace-rails-ap'
 require 'ecm_cms2'
 require 'itsf_backend'
 require 'coffee-rails'

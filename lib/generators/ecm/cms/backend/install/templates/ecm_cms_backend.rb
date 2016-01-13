@@ -4,9 +4,9 @@ Ecm::Cms::Backend.configure do |config|
   # Controller.descendants is empty in development. This is an eager load
   # issue.
   # 
-  # Default: config.registered_controllers = []
+  # Default: config.registered_controllers = -> {[]}
   # 
-  config.registered_controllers = Proc.new {[
+  config.registered_controllers = -> {[
     Ecm::Cms::Backend::ContentBoxesController,
     Ecm::Cms::Backend::NavigationItemsController,
     Ecm::Cms::Backend::NavigationsController,

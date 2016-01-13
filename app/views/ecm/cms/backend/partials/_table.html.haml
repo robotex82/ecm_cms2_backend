@@ -1,0 +1,5 @@
+= table.column :pathname, class: 'truncate-chars truncate-chars-30'
+= table.column :filename, class: 'truncate-chars truncate-chars-30'
+= table.column(:body) do |partial|
+  %div{ title: partial.body, class: 'truncate-chars truncate-chars-30'}= h(partial.body)
+= table.timestamps

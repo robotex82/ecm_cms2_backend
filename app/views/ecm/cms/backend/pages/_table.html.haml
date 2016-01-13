@@ -1,9 +1,8 @@
-= table.column :id
-= table.column :pathname
-= table.column :filename
-= table.column :title
+= table.column :title, class: 'truncate-chars truncate-chars-30'
+= table.column :pathname, class: 'truncate-chars truncate-chars-30'
+= table.column :filename, class: 'truncate-chars truncate-chars-30'
 = table.column :home_page?
 = table.column :layout
-= table.column(:ecm_cms_navigation_items) { |page| page.ecm_cms_navigation_items.collect{ |navigation_item| link_to(navigation_item, navigation_item_path(navigation_item)) }.join }
-= table.column :created_at
-= table.column :updated_at
+= table.column(:ecm_cms_navigation_items, sortable: false) do |page|
+  - page.ecm_cms_navigation_items.collect{ |navigation_item| link_to(navigation_item, navigation_item_path(navigation_item)) }.join('<br />')
+= table.timestamps
