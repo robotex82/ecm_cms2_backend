@@ -43,6 +43,12 @@ defaults:
     - ecm/cms/template/edit
     - ecm/cms/template/update
     - ecm/cms/template/destroy
+    - ecm/cms/add_homepages_service/index
+    - ecm/cms/add_homepages_service/invoke
+    - ecm/cms/add_homepages_service/call
+    - ecm/cms/import_partials_service/index
+    - ecm/cms/import_partials_service/invoke
+    - ecm/cms/import_partials_service/call
   roles:
     ecm/cms/administrator:
       - ecm/cms/backend/engine
@@ -88,6 +94,12 @@ defaults:
       - ecm/cms/template/edit
       - ecm/cms/template/update
       - ecm/cms/template/destroy
+      - ecm/cms/add_homepages_service/index
+      - ecm/cms/add_homepages_service/invoke
+      - ecm/cms/add_homepages_service/call
+      - ecm/cms/import_partials_service/index
+      - ecm/cms/import_partials_service/invoke
+      - ecm/cms/import_partials_service/call
     ecm/cms/reviewer:
       - ecm/cms/backend/engine
       - ecm/cms/content_box/index

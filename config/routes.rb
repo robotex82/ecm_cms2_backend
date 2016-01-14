@@ -1,4 +1,14 @@
 Ecm::Cms::Backend::Engine.routes.draw do
+  resources :add_homepages_service, only: [:index] do
+    get  :invoke, on: :collection
+    post :call,   on: :collection
+  end
+
+  resources :import_partials_service, only: [:index] do
+    get  :invoke, on: :collection
+    post :call,   on: :collection
+  end
+
   resources :content_boxes
   resources :navigations
   resources :navigation_items
