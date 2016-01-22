@@ -19,8 +19,8 @@ Ecm::Cms::Backend.configure do |config|
     Ecm::Cms::Backend::TemplatesController
   ]}
 
-  # Set the setvices, that will be shown in the backend menu.
-  # 
+  # Set the services, that will be shown in the backend menu.
+  #
   # Default: config.registered_services = -> {[
   #            Ecm::Cms::AddHomepagesServiceController,
   #            Ecm::Cms::Backend::ImportPartialsServiceController   
