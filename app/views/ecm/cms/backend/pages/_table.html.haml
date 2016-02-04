@@ -4,5 +4,5 @@
 = table.column :home_page?
 = table.column :layout
 = table.column(:ecm_cms_navigation_items, sortable: false) do |page|
-  - page.ecm_cms_navigation_items.collect{ |navigation_item| link_to(navigation_item, navigation_item_path(navigation_item)) }.join('<br />')
+  - page.ecm_cms_navigation_items.collect{ |navigation_item| link_to(navigation_item, navigation_item_path(navigation_item)) }.join('<br />').html_safe
 = table.timestamps
