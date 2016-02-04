@@ -1,4 +1,4 @@
-class Ecm::Cms::Backend::PartialsController < Itsf::Backend::BaseController
+class Ecm::Cms::Backend::PartialsController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Cms::Partial
   end

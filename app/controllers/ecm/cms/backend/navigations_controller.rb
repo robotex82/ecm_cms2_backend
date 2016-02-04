@@ -1,4 +1,4 @@
-class Ecm::Cms::Backend::NavigationsController < Itsf::Backend::BaseController
+class Ecm::Cms::Backend::NavigationsController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Cms::Navigation
   end

@@ -1,4 +1,4 @@
-class Ecm::Cms::Backend::ContentBoxesController < Itsf::Backend::BaseController
+class Ecm::Cms::Backend::ContentBoxesController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Cms::ContentBox
   end

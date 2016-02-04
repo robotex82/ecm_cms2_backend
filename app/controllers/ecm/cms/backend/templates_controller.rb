@@ -1,4 +1,4 @@
-class Ecm::Cms::Backend::TemplatesController < Itsf::Backend::BaseController
+class Ecm::Cms::Backend::TemplatesController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Cms::Template
   end

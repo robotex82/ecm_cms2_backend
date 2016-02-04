@@ -1,4 +1,4 @@
-class Ecm::Cms::Backend::PagesController < Itsf::Backend::BaseController
+class Ecm::Cms::Backend::PagesController < Itsf::Backend::Resource::BaseController
   def self.resource_class
     Ecm::Cms::Page
   end
