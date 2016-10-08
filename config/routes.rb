@@ -11,7 +11,9 @@ Ecm::Cms::Backend::Engine.routes.draw do
 
   resources :content_boxes
   resources :navigations
-  resources :navigation_items
+  resources :navigation_items do
+    post :reposition, on: :member
+  end
   resources :pages
   resources :partials
   resources :templates

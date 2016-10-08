@@ -1,4 +1,6 @@
 class Ecm::Cms::Backend::NavigationItemsController < Itsf::Backend::Resource::BaseController
+  include Controller::AwesomeNestedSetConcern
+  
   def self.resource_class
     Ecm::Cms::NavigationItem
   end
