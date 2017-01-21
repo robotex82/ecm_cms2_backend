@@ -6,7 +6,7 @@ class Ecm::Cms::Backend::PartialsController < Itsf::Backend::Resource::BaseContr
   private
 
   def permitted_params
-    params.require(:ecm_cms_partial)
+    params.require(:partial)
           .permit(:body, :pathname, :basename, :locale, :format, :handler)
   end
 end

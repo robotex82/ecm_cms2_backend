@@ -6,7 +6,7 @@ class Ecm::Cms::Backend::TemplatesController < Itsf::Backend::Resource::BaseCont
   private
 
   def permitted_params
-    params.require(:ecm_cms_template)
+    params.require(:template)
           .permit
   end
 end

@@ -7,7 +7,7 @@ module Ecm::Cms::Backend
     private
 
     def permitted_params
-      params.fetch(:ecm_cms_import_partials_service, {}).permit
+      params.fetch(:import_partials_service, {}).permit
     end
   end
 end

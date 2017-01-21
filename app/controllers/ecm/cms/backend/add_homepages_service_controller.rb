@@ -7,7 +7,7 @@ module Ecm::Cms::Backend
     private
 
     def permitted_params
-      params.require(:ecm_cms_add_homepages_service).permit(locales: [])
+      params.require(:add_homepages_service).permit(locales: [])
     end
   end
 end

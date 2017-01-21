@@ -6,7 +6,7 @@ class Ecm::Cms::Backend::NavigationsController < Itsf::Backend::Resource::BaseCo
   private
 
   def permitted_params
-    params.require(:ecm_cms_navigation)
+    params.require(:navigation)
           .permit(:locale, :name)
   end
 end

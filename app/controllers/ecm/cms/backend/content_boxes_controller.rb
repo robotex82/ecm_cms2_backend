@@ -6,6 +6,6 @@ class Ecm::Cms::Backend::ContentBoxesController < Itsf::Backend::Resource::BaseC
   private
 
   def permitted_params
-    params.require(:ecm_cms_content_box).permit(:name)
+    params.require(:content_box).permit(:name)
   end
 end

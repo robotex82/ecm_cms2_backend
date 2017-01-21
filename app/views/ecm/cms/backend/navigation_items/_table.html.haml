@@ -1,4 +1,4 @@
-= table.association(:ecm_cms_navigation, url: ->(navigation_item) { navigation_path(navigation_item) })
+= table.association(:ecm_cms_navigation, url: ->(navigation_item) { navigation_path(navigation_item.ecm_cms_navigation) })
 = table.column(:name) do |navigation_item|
   %span{ class: "indent indent-chars-#{navigation_item.depth * 3}"}= navigation_item.name
 = table.column :url

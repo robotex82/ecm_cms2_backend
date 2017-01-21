@@ -6,7 +6,7 @@ class Ecm::Cms::Backend::PagesController < Itsf::Backend::Resource::BaseControll
   private
 
   def permitted_params
-    params.require(:ecm_cms_page)
+    params.require(:page)
           .permit(:title, :meta_description, :body, :pathname, :basename, :locale, :format, :handler, :layout, ecm_cms_navigation_item_ids: [])
   end
 end
