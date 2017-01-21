@@ -9,14 +9,14 @@ Ecm::Cms::Backend::Engine.routes.draw do
     post :call,   on: :collection
   end
 
-  resources :content_boxes
-  resources :navigations
-  resources :navigation_items do
+  backend_resources :content_boxes
+  backend_resources :navigations
+  backend_resources :navigation_items do
     post :reposition, on: :member
   end
-  resources :pages
-  resources :partials
-  resources :templates
+  backend_resources :pages
+  backend_resources :partials
+  backend_resources :templates
 
   root to: 'home#index'
 end
