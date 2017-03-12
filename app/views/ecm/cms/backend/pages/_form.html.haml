@@ -1,7 +1,7 @@
 .well
   = form.input :title
-  = form.input :meta_description
-  = form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': form.object.handler }
+  ~ form.input :meta_description
+  ~ form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': form.object.handler }
 
 .well
   = form.input :pathname
