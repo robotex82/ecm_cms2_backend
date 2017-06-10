@@ -2,5 +2,4 @@ en:
   classes:
     ecm/cms/backend/engine: 'CMS'
   routes:
-    mount:
-      ecm_cms_backend: '/backend/content-management-system'
+    ecm-cms-backend-engine: 'cms'
