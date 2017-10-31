@@ -2,7 +2,7 @@
   ~ form.input :body, input_html: { 'data-add-editor': Itsf::Backend.features?(:'ace-rails-ap'), 'data-editor-syntax': form.object.handler }
 
 .well
-  = form.input :pathname
+  = form.input :pathname, required: false
   = form.input :basename
   = form.input :locale,  collection: I18n.available_locales
   = form.input :format,  collection: Mime::SET.symbols
