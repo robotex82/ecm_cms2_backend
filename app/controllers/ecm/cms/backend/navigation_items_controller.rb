@@ -1,11 +1,16 @@
 class Ecm::Cms::Backend::NavigationItemsController < Itsf::Backend::Resource::BaseController
-  include Controller::AwesomeNestedSetConcern
+  include ResourcesController::AwesomeNestedSetConcern
+  include ResourcesController::Sorting
   
   def self.resource_class
     Ecm::Cms::NavigationItem
   end
 
   private
+
+  def load_collection_scope
+    super.joins(:ecm_cms_navigation)
+  end
 
   def permitted_params
     params.require(:navigation_item)
