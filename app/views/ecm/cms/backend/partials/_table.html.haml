@@ -1,5 +1,3 @@
-= table.column :pathname, sortable: true, class: 'truncate-chars truncate-chars-30'
-= table.column :filename, sortable: true, class: 'truncate-chars truncate-chars-30'
-= table.column(:body, sortable: true) do |partial|
-  %div{ title: partial.body, class: 'truncate-chars truncate-chars-30'}= h(partial.body)
-= table.timestamps
+= table.column :pathname, sort: true, class: 'truncate-chars truncate-chars-30'
+= table.column :filename, sort: true, class: 'truncate-chars truncate-chars-30'
+= table.timestamps(sort: true)

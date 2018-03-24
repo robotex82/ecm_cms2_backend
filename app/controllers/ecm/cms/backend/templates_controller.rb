@@ -1,4 +1,6 @@
 class Ecm::Cms::Backend::TemplatesController < Itsf::Backend::Resource::BaseController
+  include ResourcesController::Sorting
+
   def self.resource_class
     Ecm::Cms::Template
   end

@@ -9,7 +9,7 @@ class Ecm::Cms::Backend::NavigationItemsController < Itsf::Backend::Resource::Ba
   private
 
   def load_collection_scope
-    super.joins(:ecm_cms_navigation)
+    super.joins(:ecm_cms_navigation).includes(:ecm_cms_page)
   end
 
   def permitted_params

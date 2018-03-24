@@ -2,6 +2,6 @@
 = table.row :path_and_filename
 = table.row :meta_description
 = table.row :body, as: :text, editor_syntax: table.resource.handler
+= table.boolean :home_page?
 = table.row :layout
-= table.row :created_at
-= table.row :updated_at
+= table.timestamps
